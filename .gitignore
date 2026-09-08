@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets — never commit
+.env
+.env.local
+.env.*.local
+.env.production
+*.pem
+
+# Build output
+.vercel/
+.nitro/
+.output/
+.tanstack/
+dist/
+build/
+*.tsbuildinfo
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+
+# QA / sandbox-only (not product source)
+screenshots/
+artifacts/
+attachments/
+
+# Grok sandbox runtime (keep .grok/app-env.json)
+.grok/preview.log
+.grok/favicon-preview.html
+.grok/favicon-preview.png
+.grok/status
+.grok/skills/
+.grok/references/
+.grok/og-pending
+
+# Editor
+.idea/
+.vscode/
+*.swp
